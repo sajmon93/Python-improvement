@@ -1,0 +1,9 @@
+n, k = [int(i) for i in input("Pins and bowls: ").split()]
+pins = ['I'] * n
+
+for i in range(k):
+    start, stop =  [int(i) for i in input("Start abd stop:  ").split()]
+    for j in range(start - 1, stop):
+        pins[j] = '.'
+
+print(''.join(pins))
